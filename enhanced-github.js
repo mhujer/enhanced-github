@@ -7,20 +7,32 @@ $(function () {
 
         var username = $(userEl).text();
         var branch = $(branchEl).text();
-
-        var copyFrbCommand = $('<button>Copy FRB command</button>')
-            .addClass('minibutton')
-            .click(function () {
-                copyToClipboard('git frb ' + username + ' ' + branch, 'text/plain');
-            })
-            .insertAfter(el);
+        var prNumber = $('.gh-header-number').text().replace('#', '');
 
         var copyBranchName = $('<button>Copy branch Name</button>')
-            .addClass('minibutton')
+            .addClass('minibutton enhanced-github-margin')
             .click(function () {
                 copyToClipboard(branch, 'text/plain');
-            })
-            .insertAfter(el);
+            });
+
+        var copyFrbCommand = $('<button>Copy FRB command</button>')
+            .addClass('minibutton enhanced-github-margin')
+            .click(function () {
+                copyToClipboard('git frb ' + username + ' ' + branch, 'text/plain');
+            });
+
+        var copyFprCommand = $('<button>Copy FPR command</button>')
+            .addClass('minibutton enhanced-github-margin')
+            .click(function () {
+                copyToClipboard('git fpr ' + prNumber, 'text/plain');
+            });
+
+        $('.discussion-sidebar')
+            .prepend([
+                copyBranchName,
+                copyFrbCommand,
+                copyFprCommand
+            ]);
     };
 
     var copyToClipboard = function (str, mimetype) {
