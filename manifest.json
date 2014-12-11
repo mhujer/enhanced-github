@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Enhanced Github",
+  "description": "@todo",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": [
+        "jquery-2.1.1.min.js",
+        "enhanced-github.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "clipboardWrite"
+  ]
+}
