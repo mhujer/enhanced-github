@@ -2,7 +2,7 @@
 
 [@tomasfejfar](https://github.com/tomasfejfar/) has created following [Git aliases](https://git.wiki.kernel.org/index.php/Aliases#Introduction)
 to allow easier Pull Requests review. And because copying the branch name from the PR is tricky, I created 
-a Google Chrome extension that adds fancy buttons to the PR page. (And I have some stuff planned for the future.)
+a [Google Chrome extension](https://chrome.google.com/webstore/detail/enhanced-github/ajdnkfdmjijmemfjogiabpoeihamlbgo) that adds fancy buttons to the PR page. (And I have some stuff planned for the future.)
 
 ![Enhanced Github Chrome Extension](preview.png)
 
