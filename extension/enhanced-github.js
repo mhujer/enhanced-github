@@ -9,7 +9,7 @@ $(function () {
         var branch = $(branchEl).text();
         var prNumber = $('.gh-header-number').text().replace('#', '');
 
-        var copyBranchName = $('<button>Copy branch Name</button>')
+        var copyBranchName = $('<button>Copy branch name</button>')
             .addClass('minibutton enhanced-github-margin')
             .click(function () {
                 copyToClipboard(branch, 'text/plain');
@@ -40,7 +40,7 @@ $(function () {
             event.clipboardData.setData(mimetype, str);
             event.preventDefault();
         };
-        document.execCommand("Copy", false, null);
+        document.execCommand('Copy', false, null);
     };
 
     init();

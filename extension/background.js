@@ -1,3 +1,3 @@
 chrome.webNavigation.onHistoryStateUpdated.addListener(function (details) {
-    chrome.tabs.executeScript(null, {file: "enhanced-github.js"});
+    chrome.tabs.executeScript(null, {file: 'enhanced-github.js'});
 });
