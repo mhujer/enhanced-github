@@ -1,8 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Enhanced Github",
-  "description": "@todo",
-  "version": "0.0.1",
+  "description": "Enhances Github PR page with quick copy buttons - see https://github.com/mhujer/enhanced-github for more information",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
