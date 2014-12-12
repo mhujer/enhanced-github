@@ -15,7 +15,13 @@
       ]
     }
   ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "permissions": [
-    "clipboardWrite"
+    "clipboardWrite",
+    "*://github.com/*",
+    "tabs",
+    "webNavigation"
   ]
 }
