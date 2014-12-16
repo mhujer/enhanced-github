@@ -21,5 +21,13 @@ In case you want to fetch someone's branch and work on it, add this alias:
 
 And use it like this: `git frb [remote] [branch-name]`
 
-## Licence
+## Versions
+
+### 1.0.1 (2014-12-16)
+- fixed issue when buttons were multiplicated when switching tabs back and forth
+
+### 1.0.0 (2014-12-12)
+- initial release
+
+## License
 MIT

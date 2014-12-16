@@ -1,5 +1,7 @@
 $(function () {
     var init = function () {
+        $('#enhanced-github-wrapper').remove();
+
         var el = $('.pull-header-username').parent().children('.commit-ref')[1];
 
         var userEl = $(el).children('.css-truncate-target')[0];
@@ -27,12 +29,15 @@ $(function () {
                 copyToClipboard('git fpr ' + prNumber, 'text/plain');
             });
 
+        var $wrapper = $('<div id="enhanced-github-wrapper"></div>');
+        $wrapper.append([
+            copyBranchName,
+            copyFrbCommand,
+            copyFprCommand
+        ]);
+
         $('.discussion-sidebar')
-            .prepend([
-                copyBranchName,
-                copyFrbCommand,
-                copyFprCommand
-            ]);
+            .prepend($wrapper);
     };
 
     var copyToClipboard = function (str, mimetype) {
