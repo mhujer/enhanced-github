@@ -23,6 +23,9 @@ And use it like this: `git frb [remote] [branch-name]`
 
 ## Versions
 
+### 1.0.2 (2015-03-23)
+- Update button classes according to the latest github changes
+
 ### 1.0.1 (2014-12-16)
 - fixed issue when buttons were multiplicated when switching tabs back and forth
 

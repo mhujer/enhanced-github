@@ -12,19 +12,19 @@ $(function () {
         var prNumber = $('.gh-header-number').text().replace('#', '');
 
         var copyBranchName = $('<button>Copy branch name</button>')
-            .addClass('minibutton enhanced-github-margin')
+            .addClass('btn btn-sm enhanced-github-margin')
             .click(function () {
                 copyToClipboard(branch, 'text/plain');
             });
 
         var copyFrbCommand = $('<button>Copy FRB command</button>')
-            .addClass('minibutton enhanced-github-margin')
+            .addClass('btn btn-sm enhanced-github-margin')
             .click(function () {
                 copyToClipboard('git frb ' + username + ' ' + branch, 'text/plain');
             });
 
         var copyFprCommand = $('<button>Copy FPR command</button>')
-            .addClass('minibutton enhanced-github-margin')
+            .addClass('btn btn-sm enhanced-github-margin')
             .click(function () {
                 copyToClipboard('git fpr ' + prNumber, 'text/plain');
             });
