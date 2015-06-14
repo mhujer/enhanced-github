@@ -23,6 +23,9 @@ And use it like this: `git frb [remote] [branch-name]`
 
 ## Versions
 
+### 1.0.3 (2015-06-14)
+- Fixed an issue when the extension prevented copying of text from github
+
 ### 1.0.2 (2015-03-23)
 - Update button classes according to the latest github changes
 

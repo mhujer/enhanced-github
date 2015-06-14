@@ -41,11 +41,13 @@ $(function () {
     };
 
     var copyToClipboard = function (str, mimetype) {
-        document.oncopy = function (event) {
+        var copyCallback = function (event) {
             event.clipboardData.setData(mimetype, str);
             event.preventDefault();
         };
+        document.addEventListener('copy', copyCallback);
         document.execCommand('Copy', false, null);
+        document.removeEventListener('copy', copyCallback);
     };
 
     init();
